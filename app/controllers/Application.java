@@ -48,7 +48,7 @@ public class Application extends Controller {
         // override sockjs method
         @SockJS.Settings(
                 cookies = CookieCalculator.JSESSIONID.class,
-                websocket = false,
+                websocket = true,
                 heartbeat = 55000 // duration in milliseconds
         )
         public SockJS sockjs() {

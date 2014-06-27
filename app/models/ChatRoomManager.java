@@ -119,7 +119,7 @@ public class ChatRoomManager extends ChatRoom {
                     })
             );
             rooms.put(roomName, room);
-            new Robot(room, roomName);
+//            new Robot(room, roomName);
         }
         return room;
     }
