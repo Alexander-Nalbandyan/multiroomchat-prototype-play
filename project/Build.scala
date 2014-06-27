@@ -12,7 +12,8 @@ object ApplicationBuild extends Build {
       resolvers := Seq(
         "Maven2 Local" at new File(Path.userHome, ".m2/repository/snapshots").toURI.toURL.toExternalForm,
         Resolver.sonatypeRepo("snapshots")
-      )
+      ),
+      resolvers += "Typesafe repository" at "http://repo.typesafe.com/typesafe/releases/"
     )
 
 }
